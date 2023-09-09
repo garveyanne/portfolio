@@ -36,7 +36,7 @@ h3 {
 }
 a {
  font-size: 1.5rem;
-  color: var(--drkgrnfont);
+  color: var(--darkgreen);
  font-family: var(--mono);
 }
 
@@ -68,7 +68,67 @@ img {
 .about-photo {
   border-radius: 50%;
 }
-/* intro styles */
+/* Homepage Quote styles */
+#quote h2 {
+  font-size: 2.5rem;
+color: var(--drkgrnfont);
+}
+#quote p {
+  color: var(--drkgrnfont);
+  font-family: var(--mono);
+}
+#quote p a {
+  color: var(--drkgrnfont);
+ font-family: var(--mono);
+}
+.quote-photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#quote {
+  max-width: 1200px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1500px){
+  #quote h2 {
+    margin: 0 auto;
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  #quote p {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (max-width: 828px){
+  #quote h2 {
+    margin: 0 auto;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  #quote p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  #quote h2 {
+    max-width: 600px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+/* about intro styles */
 #intro {
   padding: 4rem 1rem 10rem 1rem;
   max-width: 1200px;
@@ -85,7 +145,15 @@ img {
   font-family: var(--sans);
   font-size: 1rem;
 }
-
+#intro h2 {
+  font-size: 2.5rem;
+color: var(--drkgrnfont);
+}
+.intro-photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .name span {
   font-family: var(--mono);
   font-size: 2.5rem;
@@ -94,18 +162,6 @@ img {
   font-weight: 150;
 }
 
-#intro h2 {
-  font-size: 2.5rem;
-color: var(--drkgrnfont);
-}
-#intro h3 {
-  color: var(--darkgreen)
-}
-.intro-photo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 .profile-photo {
   border-left: 1.5px solid var(--green);
   border-top: 1.5px solid var(--green);
@@ -330,6 +386,7 @@ nav [class*="fa-"]:hover
     justify-content: flex-start;
   }
 }
+
 @media (min-width: 850px){
   nav {
     max-width: 1200px;
