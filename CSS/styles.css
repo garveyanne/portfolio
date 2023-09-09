@@ -207,14 +207,18 @@ color: var(--drkgrnfont);
 /* navbar styles */
 nav {
   font-family: var(--mono);
-  font-size: 80%;
+  font-size: 70%;
   padding: 1rem;
-  background: var(--pink)
+  background-color: var(--darkgreen);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+ min-width: 100%;
 }
 
 nav h1 a {
   font-family: var(--mono);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 nav ul {
@@ -229,9 +233,9 @@ nav ul {
 }
 
 nav a {
-  color: var(--grnfont);
+  color: var(--drkgrnfont);
   font-family: var(--sans);
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-decoration: none;
   display: block;
 }
@@ -250,6 +254,31 @@ nav li:first-child {
 nav [class*="fa-"] {
   font-size: 150%;
   color: var(--drkgrnfont);
+}
+.nav-button {
+  border: 1px solid var(--drkgrnfont); /* Change the color (#007bff) and border width (2px) as needed */
+  padding: 5px 10px; /* Adjust padding as needed for button size */
+  background-color: transparent; /* Optional: Set a transparent background color */
+  color: var(--drkgrnfont); /* Optional: Set text color to match the border color */
+  border-radius: 80px; /* Optional: Add rounded corners */
+  cursor: pointer;
+}
+.nav-button:hover
+{
+  border: 1px solid var(--darkpink);
+  background: var(--green);
+  text-decoration: none;
+}
+@media (min-width: 850px){
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
 }
 
 .button {
@@ -384,17 +413,5 @@ nav [class*="fa-"]:hover
   }
   #projects .reverse ul {
     justify-content: flex-start;
-  }
-}
-
-@media (min-width: 850px){
-  nav {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  nav li:first-child {
-    flex-basis: auto;
-    text-align: left;
-    margin-right: auto;
   }
 }
