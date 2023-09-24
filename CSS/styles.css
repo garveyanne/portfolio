@@ -43,11 +43,12 @@ h2 {
   margin: 0;
   font-family: var(--subheading);
   font-size: 2rem;
+  font-weight: 400;
 }
 h3, p {
-  margin: 0 auto;
+  margin: 0;
   font-family: var(--text);
-  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 a {
@@ -162,6 +163,11 @@ img {
   }
 }
 /* about intro styles */
+#about-facts {
+  padding: 5rem 0rem 5rem 0rem;
+  width: 1200px;
+  line-height: 1.5;
+}
 .intro {
   padding: 4rem 1rem 4rem 1rem;
   max-width: 1200px;
@@ -203,7 +209,7 @@ img {
   border-top: 1.5px solid var(--orange);
   border-radius: 25px;
   padding: 1rem;
-  width: 350px;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -420,7 +426,7 @@ nav [class*=fa-]:hover {
 }
 /* Projects section */
 #projects {
-  padding: 4rem 3rem 1rem 3rem;
+  padding: 3rem 2rem 1rem 1rem;
 }
 
 #projects h2 {
@@ -444,8 +450,7 @@ nav [class*=fa-]:hover {
 }
 
 .blackbox {
-  background-color: var(--pink);
-  color: var(--drkgrnfont);
+  color: var(--black);
   padding: 1rem;
   border-radius: 10px;
   font-size: 1.5rem;
@@ -468,9 +473,8 @@ nav [class*=fa-]:hover {
   border-left: 1.5px solid var(--green);
   border-top: 1.5px solid var(--green);
   border-radius: 25px;
-  padding: 1rem;
+  padding: .5rem .5rem .5rem .5rem;
 }
-
 @media (min-width: 550px) {
   article {
     display: grid;
@@ -559,7 +563,7 @@ margin: 0;
       }
       .card p {
         margin: 0 auto;
-        width: 300px;
+        width: 500px;
         font-family: var(--text);
         font-weight: 400;
         font-size: 1rem;
@@ -587,7 +591,7 @@ margin: 0;
       }
       .card p {
         margin: 0 auto;
-        width: 300px;
+        width: 500px;
         font-family: var(--text);
         font-weight: 400;
         font-size: 1rem;
@@ -625,4 +629,25 @@ margin: 0;
       }
   }
 
+  .container-about-me {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    }
+
+    .card-about-me {
+      width: 500px;
+    }
+.what-we-do {
+  size: 1rem;
+  text-align: left;
+  font-weight: 500;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 2rem 5rem 0rem 5rem;
+}
   /*# sourceMappingURL=styles.css.map */
