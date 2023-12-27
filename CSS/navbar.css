@@ -1,0 +1,101 @@
+/* navbar styles */
+nav {
+  font-family: var(--text);
+  font-size: 70%;
+  padding: 2rem 2rem 2.5rem 2rem;
+  background-color: rgba(211, 217, 241, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  min-width: 100%;
+}
+
+nav h1 a {
+  font-family: var(--heading);
+  font-size: 2rem;
+  color: var(--orange);
+}
+
+nav h1 a:hover {
+  font-family: var(--heading);
+  font-size: 2rem;
+  color: var(--orange);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--black);
+  font-family: var(--font);
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover,
+nav [class*=fa-]:hover {
+  color: var(--black);
+  text-decoration: none;
+}
+
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+nav [class*=fa-] {
+  font-size: 150%;
+  color: var(--black);
+}
+
+.nav-button {
+  border: 1px solid var(--black); /* Change the color (#007bff) and border width (2px) as needed */
+  padding: 8px 24px; /* Adjust padding as needed for button size */
+  background-color: var(--blue); /* Optional: Set a transparent background color */
+  color: var(--black); /* Optional: Set text color to match the border color */
+  border-radius: 80px; /* Optional: Add rounded corners */
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  border: 1px solid var(--orange);
+  background: var(--darkblue);
+  text-decoration: none;
+}
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
+.button a {
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
+  color: var(--cream);
+  font-family: var(--font);
+  padding: 8px 24px;
+  border-radius: 80px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button a:hover {
+  border: 1px solid var(--lightorange);
+  color: var(--lightorange);
+  background-color: var(--orange);
+}

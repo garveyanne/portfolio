@@ -1,0 +1,75 @@
+/* about intro styles */
+.about-photo {
+  border-radius: 50%;
+}
+#about-facts {
+  padding: 5rem 0rem 5rem 0rem;
+  width: 1200px;
+  line-height: 1.5;
+}
+.intro {
+  padding: 4rem 1rem 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.intro .name {
+  font-family: var(--sans);
+  font-size: 1rem;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.intro-photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.name span {
+  font-family: var(--mono);
+  font-size: 2.5rem;
+  color: var(--black);
+  display: block;
+  font-weight: 150;
+}
+
+.profile-photo {
+  border-left: 1.5px solid var(--orange);
+  border-top: 1.5px solid var(--orange);
+  border-radius: 25px;
+  padding: 1rem;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-about-me {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  }
+
+  .card-about-me {
+    width: 500px;
+  }

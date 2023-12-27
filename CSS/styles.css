@@ -45,7 +45,14 @@ h2 {
   font-size: 2rem;
   font-weight: 400;
 }
-h3, p {
+h3 {
+  margin: 0;
+  font-family: var(--subheading);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+p {
   margin: 0;
   font-family: var(--text);
   font-weight: 400;
@@ -88,10 +95,6 @@ img {
   height: 2px;
 }
 
-.about-photo {
-  border-radius: 50%;
-}
-
 /* Homepage Quote styles */
 #quote h3 {
   font-size: 2.5rem;
@@ -115,7 +118,7 @@ img {
   justify-content: center;
 }
 
-#quote {
+.container {
   max-width: 1200px;
   padding-top: 4rem;
   padding-bottom: 32px;
@@ -162,64 +165,6 @@ img {
     text-align: center;
   }
 }
-/* about intro styles */
-#about-facts {
-  padding: 5rem 0rem 5rem 0rem;
-  width: 1200px;
-  line-height: 1.5;
-}
-.intro {
-  padding: 4rem 1rem 4rem 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.intro p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.intro .name {
-  font-family: var(--sans);
-  font-size: 1rem;
-}
-
-.intro h2 {
-  font-size: 2.5rem;
-  color: var(--black);
-}
-
-.intro-photo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.name span {
-  font-family: var(--mono);
-  font-size: 2.5rem;
-  color: var(--black);
-  display: block;
-  font-weight: 150;
-}
-
-.profile-photo {
-  border-left: 1.5px solid var(--orange);
-  border-top: 1.5px solid var(--orange);
-  border-radius: 25px;
-  padding: 1rem;
-  width: 500px;
-  margin: 0 auto;
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  align-items: center;
-  justify-content: center;
-}
 
 /* contact styles */
 #contact {
@@ -247,183 +192,6 @@ img {
   font-weight: 200;
 }
 
-/* navbar styles */
-nav {
-  font-family: var(--text);
-  font-size: 70%;
-  padding: 2rem 2rem 2.5rem 2rem;
-  background-color: rgba(211, 217, 241, 0.7);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  min-width: 100%;
-}
-
-nav h1 a {
-  font-family: var(--heading);
-  font-size: 2rem;
-  color: var(--orange);
-}
-
-nav h1 a:hover {
-  font-family: var(--heading);
-  font-size: 2rem;
-  color: var(--orange);
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-nav a {
-  color: var(--black);
-  font-family: var(--font);
-  font-size: 1rem;
-  text-decoration: none;
-  display: block;
-}
-
-nav a:hover,
-nav [class*=fa-]:hover {
-  color: var(--black);
-  text-decoration: none;
-}
-
-nav li:first-child {
-  flex-basis: 100%;
-  text-align: center;
-}
-
-nav [class*=fa-] {
-  font-size: 150%;
-  color: var(--black);
-}
-
-.nav-button {
-  border: 1px solid var(--black); /* Change the color (#007bff) and border width (2px) as needed */
-  padding: 8px 24px; /* Adjust padding as needed for button size */
-  background-color: var(--blue); /* Optional: Set a transparent background color */
-  color: var(--black); /* Optional: Set text color to match the border color */
-  border-radius: 80px; /* Optional: Add rounded corners */
-  cursor: pointer;
-}
-
-.nav-button:hover {
-  border: 1px solid var(--orange);
-  background: var(--darkblue);
-  text-decoration: none;
-}
-
-@media (min-width: 850px) {
-  nav {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  nav li:first-child {
-    flex-basis: auto;
-    text-align: left;
-    margin-right: auto;
-  }
-}
-.button a {
-  border: 1px solid var(--orange);
-  background-color: var(--orange);
-  color: var(--cream);
-  font-family: var(--font);
-  padding: 8px 24px;
-  border-radius: 80px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.button a:hover {
-  border: 1px solid var(--lightorange);
-  color: var(--lightorange);
-  background-color: var(--orange);
-}
-
-/* Footer styles */
-footer {
-  text-align: center;
-  padding: 4rem 0rem 0rem 0rem;
-  color: var(--black);
-}
-
-footer ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 2rem 0 2rem 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  font-size: 3rem;
-}
-
-footer a {
-  color: var(--black);
-  font-family: var(--font);
-  font-size: 2.5rem;
-  text-decoration: none;
-  display: block;
-}
-
-footer a:hover,
-nav [class*=fa-]:hover {
-  color: var(--orange);
-  text-decoration: none;
-}
-
-.footer-rights p {
-  color: var(--drkgrnfont);
-  font-size: 2rem;
-  display: flex;
-  justify-content: start;
-  margin: 0 auto;
-  padding: 8rem 0rem 2rem 1rem;
-}
-
-@media (max-width: 1500px) {
-  footer h1 {
-    margin: 0 auto;
-    font-size: 3rem;
-    line-height: 1;
-    text-align: center;
-  }
-  .footer-rights p {
-    font-size: 1.5rem;
-    padding-bottom: 24px;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-@media (max-width: 828px) {
-  footer h1 {
-    margin: 0 auto;
-    font-size: 2.5rem;
-    line-height: 1;
-    text-align: center;
-  }
-  .footer-rights p {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 600px) {
-  footer h1 {
-    max-width: 600px;
-    font-size: 1.5rem;
-    line-height: 1;
-    text-align: center;
-  }
-}
 /* Projects section */
 #projects {
   padding: 3rem 2rem 1rem 1rem;
@@ -518,15 +286,15 @@ nav [class*=fa-]:hover {
   }
 }
 /* Project CARD */
-.card {
+.project-card {
   width: 400px;
 }
-.card img {
+.project-card img {
 height: 500px;
 object-fit: cover;
 margin: 0;
 }
-.card p {
+.project-card p {
   margin: 0 auto;
   width: 300px;
   font-family: var(--text);
@@ -535,7 +303,7 @@ margin: 0;
   line-height: 1;
   padding-bottom: 2rem;
 }
-.container {
+.project-container {
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
@@ -545,23 +313,23 @@ margin: 0;
   }
   @media (min-width: 825px) {
     /* For a screen < 960px, this CSS will be read */
-    .container {
+    .project-container {
       margin: 0 auto;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
       align-items: center;
     }
-    .card {
+    .project-card {
       width: 400px;
       gap: 2px;
       }
-      .card img {
+      .project-card img {
       height: 500px;
       object-fit: cover;
       margin: 0;
       }
-      .card p {
+      .project-card p {
         margin: 0 auto;
         width: 500px;
         font-family: var(--text);
@@ -573,23 +341,23 @@ margin: 0;
   }
   @media (min-width: 700px) {
     /* For a screen < 720px, this CSS will be read */
-    .container {
+    .project-container {
       margin: 0 auto;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
       align-items: center;
       }
-      .card {
+      .project-card {
         width: 400px;
         gap: 2px;
       }
-      .card img {
+      .project-card img {
       height: 500px;
       object-fit: cover;
       margin: 0;
       }
-      .card p {
+      .project-card p {
         margin: 0 auto;
         width: 500px;
         font-family: var(--text);
@@ -602,23 +370,23 @@ margin: 0;
 
   @media (min-width: 400px) {
     /* For a screen < 540px, this CSS will be read */
-    .container {
+    .project-container {
       margin: 0 auto;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
       align-items: center;
       }
-      .card {
+      .project-card {
         width: 400px;
         gap: 2px;
       }
-      .card img {
+      .project-card img {
       height: 500px;
       object-fit: cover;
       margin: 0;
       }
-      .card p {
+      .project-card p {
         margin: 0 auto;
         width: 300px;
         font-family: var(--text);
@@ -629,19 +397,6 @@ margin: 0;
       }
   }
 
-  .container-about-me {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    }
-
-    .card-about-me {
-      width: 500px;
-    }
 .what-we-do {
   size: 1rem;
   text-align: left;
@@ -650,4 +405,24 @@ margin: 0;
   justify-content: center;
   padding: 2rem 5rem 0rem 5rem;
 }
+
+/* Style for the What We Do section */
+.what-we-do {
+  max-width: 800px; /* Adjust the width as needed */
+  margin: 0 auto;
+}
+/* Style for individual services */
+.service {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc; /* Add a bottom border for separation */
+  padding-bottom: 20px;
+}
+.service h3 {
+  margin-bottom: 10px;
+  color: #333; /* Change the color of the service titles */
+}
+.service p {
+  color: #666; /* Change the color of the service descriptions */
+}
+
   /*# sourceMappingURL=styles.css.map */
